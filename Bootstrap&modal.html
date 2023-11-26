@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .d-flex a {
+            text-decoration: none;
+            color: green;
+            border-radius: 7px;
+            padding-right: 20px;
+        }
+        .d-flex a:hover {
+            text-decoration: none;
+            color: rgb(185, 21, 21);
+            border-radius: 7px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container-lg my-2">
+            <header>
+                <div class="d-flex justify-content-between">
+                    <h6 class="my-3">Institut Specialise de technologie appliquee Ait Melloul</h6>
+                    <img src="https://i.pinimg.com/736x/55/74/19/557419a8847156c4d754beb1a4d031cc.jpg" alt="" width="100px"  style="margin-top: -20px;">
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <a href=""><p class="px-2">Evaluation</p></a>
+                        <a href=""><p class="px-2">Avancement</p></a>
+                        <a href=""><p class="px-2">Changer EFP</p></a>
+                        <a href=""><p class="px-2">Mon Compte</p></a>
+                        <a href=""><p class="px-2">Déconnexion</p></a>
+                    </div>
+                </div>
+            </header>
+            <hr>
+            <h3>Cahier De Textes | <a href="">Retour</a></h3>
+            <hr>
+            <div class="d-flex justify-content-center m-5">
+                <label for="lname">Filiere :</label>
+                <select name="filiere" class="mx-3 form-select w-25">
+                    <option value="DD">Developpement Digital</option>
+                    <option value="GE">Gestion des Entreprise</option>
+                    <option value="GC">Génie Civil</option>
+                    <option value="ID">Infrastructure Digital</option>
+                </select>
+                <label for="lname">Module : </label>
+                <select name="filiere" class="mx-3 form-select w-25">
+                    <option value="DD">Algorithme & Python</option>
+                    <option value="GE">Site web Statique</option>
+                    <option value="GC">Java Scripte</option>
+                    <option value="ID">Soft Skills</option>
+                </select>
+            </div>
+                <h6>Nouvelle Séance</h6>
+                <hr>
+                <div class="d-flex justify-content-between m-5">
+                    <div class="d-flex w-50">
+                        <LAbel>Elts de la compétence (Objectifs)* 300 caractéres</LAbel>
+                        <textarea id="largeTextInput" name="largeTextInput" rows="2" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <label for="" class="px-4">Type de cours</label>
+                        <select name="filiere" class="form-select">
+                            <option value="DD">Algorithme & Python</option>
+                            <option value="GE">Site web Statique</option>
+                            <option value="GC">Java Scripte</option>
+                            <option value="ID">Soft Skills</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mx-5">
+                    <div>
+                        <label for="" class="py-3 px-4">Date de la séance *</label>
+                        <select name="filiere" class="form-select">
+                            <option value="DD">Algorithme & Python</option>
+                            <option value="GE">Site web Statique</option>
+                            <option value="GC">Java Scripte</option>
+                            <option value="ID">Soft Skills</option>
+                        </select><br>
+                        <label for="" class="p-3">Heure de Démarrage</label>
+                        <select name="filiere" class="form-select">
+                            <option value="DD">Algorithme & Python</option>
+                            <option value="GE">Site web Statique</option>
+                            <option value="GC">Java Scripte</option>
+                            <option value="ID">Soft Skills</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for=""  class="p-3">Eff. Absents</label>
+                        <select name="filiere" class="form-select">
+                            <option value="DD">Algorithme & Python</option>
+                            <option value="GE">Site web Statique</option>
+                            <option value="GC">Java Scripte</option>
+                            <option value="ID">Soft Skills</option>
+                        </select><br>
+                        <label for=""  class="py-3 px-3">Heure Fin * </label>
+                        <select name="filiere" class="form-select">
+                            <option value="DD">Algorithme & Python</option>
+                            <option value="GE">Site web Statique</option>
+                            <option value="GC">Java Scripte</option>
+                            <option value="ID">Soft Skills</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between m-5">
+                    <div>
+                        <div class="d-flex">
+                            <label for="">Commentaire</label>&nbsp;&nbsp;
+                            <textarea name="" id="" cols="50" rows="2"></textarea>
+                        </div>
+                        <label for="" style="padding-right: 30px; padding-top: 30px;">Type de séance</label>
+                        <input type="radio"><label for="cours">Cours</label>
+                        <input type="radio"><label for="cours">cc</label>
+                        <input type="radio"><label for="cours">EFM</label>
+                    </div>
+                    <div>
+                        <div class="d-flex mx-5">
+                            <label for="">Liste Absents</label>&nbsp;&nbsp;
+                            <textarea name="" id="" cols="22" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success my-lg-3 w-25 mx-4" data-bs-toggle="modal" data-bs-target="#myModal">Valider La séance</button>
+                <!-- modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Nouvelle Séance</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                          <p><strong>Elts de la compétence:</strong> abs</p>
+                          <p><strong>Mode:</strong> Présentielle</p>
+                          <p><strong>sous-group:</strong> DEV101</p>
+                          <p><strong>date de la séance:</strong> mardi. 10/12/2023</p>
+                          <p><strong>heure debut:</strong> 8:00</p>
+                          <p><strong>heure fin:</strong> 12:30</p>
+                        </div>
+                
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                          <button type="submit" class="btn btn-primary">Confirmer</button>
+                        </div>
+                
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
